@@ -33,7 +33,7 @@ const SignUp = () => {
             //     }
             // }
 
-            let response = await axios.post('http://localhost:4200/signup', formObj);
+            let response = await axios.post(process.env.REACT_APP_BACKEND_URL + '/signup', formObj);
 
             console.log(response);
 

@@ -28,7 +28,7 @@ const Login = () => {
         // if fine, then navigate to home page
 
         try {
-            let response = await axios.post('http://localhost:4200/login', { email: email, password: password });
+            let response = await axios.post(process.env.REACT_APP_BACKEND_URL + '/login', { email: email, password: password });
             console.log(response);
             if (response.data.length > 0) {
                 console.log("Login Successful");
