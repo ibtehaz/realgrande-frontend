@@ -45,7 +45,7 @@ const Enquiries = () => {
             {
                 allEnquiries.map((enquiry) => {
                         return (
-                        <tr className="">
+                        <tr className="" id={enquiry._id}>
                             <td scope="row">{enquiry.address} </td>
                             <td>{enquiry.name}</td>
                             <td> {enquiry.email}</td>
